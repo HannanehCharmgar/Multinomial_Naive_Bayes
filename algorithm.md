@@ -50,12 +50,12 @@ Likelihood نشان‌دهنده احتمال دیدن یک کلمه *به شر�
 
 *   **امتیاز برای پیام عادی (Normal):**
 
-     $\text{Score}_{\text{Normal}} \propto \text{Prior}_{\text{Normal}} \times P(\text{dear} | \text{Normal}) \times P(\text{friend} | \text{Normal})$
+     $$$\text{Score}_{\text{Normal}} \propto \text{Prior}_{\text{Normal}} \times P(\text{dear} | \text{Normal}) \times P(\text{friend} | \text{Normal})$$$
     *   با جایگذاری مقادیر: $0.67 \times 0.47 \times 0.29 \approx 0.09$.
 
 *   **امتیاز برای پیام اسپم (Spam):**
 
-     $\text{Score}_{\text{Spam}} \propto \text{Prior}_{\text{Spam}} \times P(\text{dear} | \text{Spam}) \times P(\text{friend} | \text{Spam})$
+     $$$\text{Score}_{\text{Spam}} \propto \text{Prior}_{\text{Spam}} \times P(\text{dear} | \text{Spam}) \times P(\text{friend} | \text{Spam})$$$
     *   با جایگذاری مقادیر (فرضاً): $0.33 \times (\text{مقادیر Likelihood اسپم}) \approx 0.01$.
 
 ### **۳. تصمیم‌گیری**
