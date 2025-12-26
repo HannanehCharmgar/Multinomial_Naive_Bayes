@@ -1,6 +1,6 @@
 
 
-#  الگوریتم Multinomial Naive Bayes (فیلتر اسپم)**
+#  الگوریتم Multinomial Naive Bayes (فیلتر اسپم)
 
 این آموزش بر نحوه استفاده از طبقه‌بندی‌کننده Naive Bayes برای تفکیک پیام‌های عادی (Normal) از پیام‌های اسپم (Spam) تمرکز دارد.
 
