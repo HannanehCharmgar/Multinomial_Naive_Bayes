@@ -49,11 +49,13 @@ Likelihood نشان‌دهنده احتمال دیدن یک کلمه *به شر�
 برای تعیین کلاس پیام، امتیازی متناسب با احتمال عضویت در هر کلاس محاسبه می‌کنیم.
 
 *   **امتیاز برای پیام عادی (Normal):**
-    $$\text{Score}_{\text{Normal}} \propto \text{Prior}_{\text{Normal}} \times P(\text{dear} | \text{Normal}) \times P(\text{friend} | \text{Normal})$$
+
+     $\text{Score}_{\text{Normal}} \propto \text{Prior}_{\text{Normal}} \times P(\text{dear} | \text{Normal}) \times P(\text{friend} | \text{Normal})$
     *   با جایگذاری مقادیر: $0.67 \times 0.47 \times 0.29 \approx 0.09$.
 
 *   **امتیاز برای پیام اسپم (Spam):**
-    $$\text{Score}_{\text{Spam}} \propto \text{Prior}_{\text{Spam}} \times P(\text{dear} | \text{Spam}) \times P(\text{friend} | \text{Spam})$$
+
+     $\text{Score}_{\text{Spam}} \propto \text{Prior}_{\text{Spam}} \times P(\text{dear} | \text{Spam}) \times P(\text{friend} | \text{Spam})$
     *   با جایگذاری مقادیر (فرضاً): $0.33 \times (\text{مقادیر Likelihood اسپم}) \approx 0.01$.
 
 ### **۳. تصمیم‌گیری**
@@ -89,5 +91,3 @@ Likelihood نشان‌دهنده احتمال دیدن یک کلمه *به شر�
 3.  **کارایی:** با وجود این ساده‌سازی (که در اصطلاح یادگیری ماشین، **High Bias** نامیده می‌شود)، Naive Bayes در عمل برای وظایفی مانند فیلتر کردن اسپم بسیار خوب عمل می‌کند (**Low Variance**).
 
 ---
-
-این جزوه، تمام مفاهیم اصلی Multinomial Naive Bayes را پوشش می‌دهد. آیا می‌خواهید درباره **Gaussian Naive Bayes** (که برای داده‌های پیوسته استفاده می‌شود) بیشتر بدانید، یا موضوع دیگری را شروع کنیم؟
