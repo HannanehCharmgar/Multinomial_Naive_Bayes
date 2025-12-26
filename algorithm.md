@@ -1,6 +1,6 @@
 
 
-# **جزوه تفصیلی: الگوریتم Multinomial Naive Bayes (فیلتر اسپم)**
+#  الگوریتم Multinomial Naive Bayes (فیلتر اسپم)**
 
 این آموزش بر نحوه استفاده از طبقه‌بندی‌کننده Naive Bayes برای تفکیک پیام‌های عادی (Normal) از پیام‌های اسپم (Spam) تمرکز دارد.
 
@@ -11,6 +11,13 @@
 ### **۱. ساخت هیستوگرام کلمات**
 
 ما دو هیستوگرام (شمارش فراوانی) می‌سازیم: یکی برای تمام کلمات پیام‌های عادی و دیگری برای کلمات پیام‌های اسپم.
+## پیام های عادی:
+<img width="445" height="235" alt="image" src="https://github.com/user-attachments/assets/8829e4a3-624c-42c9-8b0f-d529e9fa4ce2" />
+
+## پیام های اسپم:
+
+<img width="441" height="204" alt="image" src="https://github.com/user-attachments/assets/5e0e477b-238f-4b9f-8817-55c2958541a9" />
+
 
 ### **۲. محاسبه Likelihoods (احتمالات شرطی)**
 
