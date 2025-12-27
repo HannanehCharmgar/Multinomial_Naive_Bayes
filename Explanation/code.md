@@ -1,5 +1,6 @@
 # پروژه طبقه‌بندی اخبار با Multinomial Naive Bayes
-این نوت‌بوک یک **پایپلاین کامل برای طبقه‌بندی متن اخبار** ارائه می‌دهد.  
+
+
 الگوریتم استفاده شده: **Multinomial Naive Bayes** با بردارسازی متن با **CountVectorizer**.  
 
 مراحل انجام پروژه:  
@@ -50,6 +51,24 @@ print("Train shape:", train_df.shape)
 print("Test shape:", test_df.shape)
 print("Sample rows:\n", train_df.head())
 ```
+# output:
+
+```
+### توضیح خروجی داده‌ها
+
+- **Train shape: (120000, 2)**  
+  داده‌های آموزشی شامل ۱۲۰,۰۰۰ نمونه هستند و هر نمونه دو ستون دارد:  
+  1. `text` → متن خبر  
+  2. `label` → برچسب کلاس متن
+
+- **Test shape: (7600, 2)**  
+  داده‌های آزمون شامل ۷,۶۰۰ نمونه هستند و ساختار مشابه داده‌های آموزشی دارند.
+
+```
+
+
+> مشاهده می‌کنیم که داده‌ها شامل اخبار اقتصادی هستند و برچسب‌ها نشان می‌دهند که هر متن به کدام کلاس تعلق دارد. 
+
 ## نمونه‌گیری استراتیفای شده (Stratified Subsample)
 برای سریع‌تر شدن آموزش، تعداد نمونه‌ها محدود می‌شود اما نسبت کلاس‌ها حفظ می‌شود.  
 - 5000 نمونه از هر کلاس برای آموزش  
@@ -110,6 +129,16 @@ print("F1-score :", f1)
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred))
 ```
+# output:
+
+```
+Evaluation Metrics:
+Accuracy : 0.8995
+Precision: 0.8993429511091425
+Recall   : 0.8995
+F1-score : 0.8993781805271808
+```
+
 ## ماتریس سردرگمی (Normalized Confusion Matrix)
 نشان می‌دهد هر کلاس چه تعداد درست و اشتباه پیش‌بینی شده است.
 
@@ -130,6 +159,8 @@ plt.show()
 # output:
 
 <img width="579" height="547" alt="image" src="https://github.com/user-attachments/assets/b1bfa225-5f1b-48c3-841e-425b0d3054fd" />
+
+باتوجه به نمودار، مدل در یافتن اخبار ورزشی موفق تر بوده است.
 
 ## نمودار مقایسه معیارها
 نمودار میله‌ای برای مقایسه Accuracy، Precision، Recall و F1-score
@@ -176,3 +207,12 @@ proba = model.predict_proba(new_vec)
 print("Custom news prediction:", prediction[0])
 print("Prediction probabilities:", proba)
 ```
+# output:
+
+```
+World: 0.08%
+Sports: 0.00%
+Business: 99.89%
+Sci/Tech: 0.03%
+```
+متن جدید با احتمالات بالا به کلاس ها تعلق دارد. باتوجه به اعداد، خبر جدید مربوط به Business است.
