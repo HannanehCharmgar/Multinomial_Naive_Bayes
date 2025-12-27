@@ -160,6 +160,8 @@ plt.show()
 
 <img width="579" height="547" alt="image" src="https://github.com/user-attachments/assets/b1bfa225-5f1b-48c3-841e-425b0d3054fd" />
 
+باتوجه به نمودار، مدل در یافتن اخبار ورزشی موفق تر بوده است.
+
 ## نمودار مقایسه معیارها
 نمودار میله‌ای برای مقایسه Accuracy، Precision، Recall و F1-score
 
