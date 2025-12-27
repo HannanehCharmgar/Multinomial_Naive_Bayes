@@ -94,9 +94,9 @@ P(C | X) = \frac{P(C) \cdot P(X | C)}{P(X)}
 - فرض می‌کنیم ویژگی‌ها (کلمات) **مستقل از هم هستند**.  
 - بنابراین احتمال کل ویژگی‌ها با توجه به کلاس، حاصل ضرب احتمال هر ویژگی است:
 
-\[
+$\[
 P(X | C) = P(x_1 | C) \times P(x_2 | C) \times ... \times P(x_n | C)
-\]
+\]$
 
 ---
 
@@ -104,27 +104,27 @@ P(X | C) = P(x_1 | C) \times P(x_2 | C) \times ... \times P(x_n | C)
 
 #### کلاس Normal (عادی):
 
-\[
+$\[
 Score_{Normal} \propto P(Normal) \times P(dear|Normal) \times P(friend|Normal)
-\]
+\]$
 
 با جایگذاری مقادیر فرضی:
 
-\[
+$\[
 Score_{Normal} = 0.67 \times 0.47 \times 0.29 \approx 0.09
-\]
+\]$
 
 #### کلاس Spam (هرزنامه):
 
-\[
+$\[
 Score_{Spam} \propto P(Spam) \times P(dear|Spam) \times P(friend|Spam)
-\]
+\]$
 
 با جایگذاری مقادیر:
 
-\[
+$\[
 Score_{Spam} \approx 0.01
-\]
+\]$
 
 ---
 
@@ -132,9 +132,9 @@ Score_{Spam} \approx 0.01
 
 - کلاسی که **بیشترین امتیاز (Score)** را دارد، انتخاب می‌شود:
 
-\[
+$\[
 \text{Predicted Class} = \arg\max_C Score_C
-\]
+\]$
 
 در مثال ما:
 
