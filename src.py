@@ -135,7 +135,8 @@ plt.show()
 new_text = ["The stock market reacted positively to the new economic policy"]
 new_vec = vectorizer.transform(new_text)
 prediction = model.predict(new_vec)
-proba = model.predict_proba(new_vec)
+classes = ["World", "Sports", "Business", "Sci/Tech"]
+proba = model.predict_proba(new_vec)[0]  
 
-print("Custom news prediction:", prediction[0])
-print("Prediction probabilities:", proba)
+for cls, p in zip(classes, proba):
+    print(f"{cls}: {p*100:.2f}%")
